@@ -68,7 +68,7 @@ let classImg = document.getElementById("content__img");
 let linkHome = document.getElementById("content__link_back");
 
 function printClassInformation(event) {
-    let menuItem = event.target.closest("li");
+    let menuItem = event.target.closest("a");
     let className = menuItem.innerText;
     let classIndex = classesArr.findIndex((el) => {
       if (el.name === className) {

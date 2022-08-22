@@ -68,7 +68,11 @@ a:hover{
     font-size: 24px;
 }
 
-.menu__item:hover{
+.menu__item:visited{
+    color: white;
+}
+
+.menu__item:hover, :focus{
     color:  #f3c03f;
 }
 
