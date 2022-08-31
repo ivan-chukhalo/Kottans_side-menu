@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     display: flex;
     justify-content:space-between;
@@ -130,6 +134,15 @@ a:hover{
 }
 @media (max-width: 375px) {
     .menu__item{
-        width: 150px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .menu__icon{
+        display: none;
+    }
+
+    .content{
+        padding-right: 0;
     }
 }
