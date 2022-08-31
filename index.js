@@ -97,11 +97,6 @@ function printClassInformation(event) {
   
   const className = event.target.closest("a").dataset.gameClass;
   const classObj = classesArr.find(classObj => classObj.name === className)
-  // const classIndex = classesArr.findIndex((el) => {
-  //   if (el.name === className) {
-  //     return true;
-  //   }
-  // });
   contentTitle.innerText = classObj.name;
   contentDescription.innerText = classObj.description;
   contentImg.setAttribute("src","./assets/illustrations/" + classObj.name + ".jpg");
